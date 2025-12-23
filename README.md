@@ -1,2 +1,3 @@
 # ============================================================================== # 專案名稱：個人財務收支追蹤器 (Income/Expense Tracker) # 執行環境：Google Colab # 介面工具：Gradio # 檔案儲存：CSV 格式 # 適用對象：Python 新手，大學生專案原型開發 # ============================================================================== # 1. 載入必要的函式庫 import pandas as pd import gradio as gr import os from datetime import datetime # ============================================================================== # 2. 檔案路徑與初始設定 # ============================================================================== # 定義資料儲存的 CSV 檔案名稱 DATA_FILE = 'transactions.csv' # 初始的交易資料框 (DataFrame) # 如果檔案不存在，就建立一個新的 DataFrame if os.path.exists(DATA_FILE): transactions_df = pd.read_csv(DATA_FILE) # 確保日期欄位是 datetime 格式，方便後續篩選 tr
 收件匣
+1
